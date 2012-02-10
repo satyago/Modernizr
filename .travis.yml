@@ -6,5 +6,4 @@ branches:
     - "travis-ci"
 before_script:
   - "sh -e /etc/init.d/xvfb start"
-  - bundle exec rackup &
-script: DISPLAY=:99.0 phantomjs test/qunit/run-qunit.js "http://localhost:9292/test/index.html?package=all"
+script: DISPLAY=:99.0 phantomjs test/qunit/run-qunit.js "test/index.html?package=all"
