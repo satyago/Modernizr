@@ -1,5 +1,9 @@
 rvm:
   - 1.9.3
+# whitelist
+branches:
+  only:
+    - travis-ci
 before_script:
   - "sh -e /etc/init.d/xvfb start"
   - bundle exec rackup &
